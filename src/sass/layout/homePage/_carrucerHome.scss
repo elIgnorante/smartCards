@@ -1,0 +1,40 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+
+.comofuncionaSection {
+    padding: 6rem 10rem;
+}
+
+.headerComofunciona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    margin-bottom: 4rem;
+}
+
+.carrucelWrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    .carrucel {
+        width: 100%;
+    }
+}
+
+.carrucelContainer {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+    margin: 0 auto;
+    max-width: 100rem;
+    position: relative;
+}
+

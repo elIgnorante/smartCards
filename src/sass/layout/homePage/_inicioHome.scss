@@ -1,0 +1,115 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sectionInicio {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/images/FondoGradiend.png');
+  background-repeat: no-repeat;
+  background-size:  120vh;
+  background-position: top center;
+  
+  
+}
+
+.mainInicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:  15rem;
+  height: 70vh;
+
+  
+}
+
+
+.mainInicio h1 {
+  font-size: 6.4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navLinkComienzaAhora {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  background-color: v.$text_black;
+  color: white;
+  padding: 1.5rem 2.5rem;
+  border-radius: .6rem;
+  text-decoration: none;
+}
+
+// caracteristicas
+
+.sectionCaracteristicas{
+  padding: 6rem 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1C {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.containerCaracteristicas {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.cointainerSuperior{
+  display : flex;
+  gap: 2rem;
+}
+
+.cointainerInferior {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.caracteristica {
+  // background-color: v.$fondo2;
+  // border-radius: 1.2rem;
+  @include m.glassWhiteBg;
+
+
+  padding: 2rem;
+  height: 100%;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.iconLightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  background-color: v.$morado2;
+}
+
+
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  background-color: v.$morado2;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+
+}

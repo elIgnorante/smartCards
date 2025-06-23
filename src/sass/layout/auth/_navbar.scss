@@ -1,0 +1,26 @@
+@use "base/variables" as v;
+
+
+.navbarContainer {
+    padding: 3rem 4rem;
+    width: 100%;
+}
+
+.authNavbar {
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+}
+
+.nav-item {
+    font-family: v.$fuente_titulos;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: v.$text_blackGray;
+    padding-bottom: 0.2rem;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.active {
+    border-bottom: 0.2rem solid v.$primario;
+}

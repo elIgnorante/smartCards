@@ -1,0 +1,78 @@
+//Tipografia
+//   Importación de fuentes
+//           Inter
+@font-face {
+  font-family: 'Inter';
+  src: url('../../src/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Especifica el rango de pesos que soporta la fuente variable */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../src/assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Especifica el rango de pesos que soporta la fuente variable */
+  font-style: italic;
+}
+
+// Montserrat
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Especifica el rango de pesos que soporta la fuente variable */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../src/assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Especifica el rango de pesos que soporta la fuente variable */
+  font-style: italic;
+}
+
+// Ralewey
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../src/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Especifica el rango de pesos que soporta la fuente variable */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../src/assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Especifica el rango de pesos que soporta la fuente variable */
+  font-style: italic;
+}
+
+
+
+//  Varibles de fuentes
+$fuente_principal: 'Montserrat', sans-serif;
+$fuente_titulos: 'Raleway', sans-serif;
+$fuente_secundaria: 'Inter', sans-serif;
+
+// Tamaños de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
+
+//Colores
+$primario: #8B5CF6;
+$morado2: #4E47FF;
+$secundario: #E0E7FF;
+$terciario: #F3F4F6;
+$blue: #00ADFE;
+
+$text_white: #FFFFFF;
+$text_gray: #525252;
+$text_blackGray: #1F2937;
+$text_black: #111827;
+
+;
+
+$fondo: #FDF6EC;
+$fondo2: #F9FAFB;
+
+
+
+

@@ -1,0 +1,106 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*,
+*:focus {
+  outline: none;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  font-family: v.$fuente_principal;
+  font-size: 1.6rem;
+  background-color: white;
+  color: v.$text_blackGray;
+
+  &.body-fijo {
+    overflow: hidden;
+  }
+
+  @include m.telefono {
+    &.body-scroll {
+      padding-top: 8.6rem;
+    }
+  }
+}
+p {
+  font-size: 2rem;
+  color: v.$text_blackGray;
+  line-height: 1.5;
+  text-align: justify;
+}
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 5rem 0;
+  color: v.$text_black;
+}
+h1 {
+  font-size: 6.4rem;
+  font-weight: 400;
+  font-family: v.$fuente_principal;
+}
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-family: v.$fuente_titulos;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: v.$fuente_titulos;
+}
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none; /* Elimina las viñetas */
+  padding-left: 0; /* Opcional: elimina el espaciado izquierdo predeterminado */
+  margin: 0; /* Opcional: elimina el margen por defecto */
+}
+
+//Con las dos reglas css anteriores el pading no nos dara problemas con el tamaña de nuestros elementos a la hora de aplicarlo
+
+.btnPrimary {
+  background: linear-gradient(to right, #9181f4, #5038ed);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+ &:hover {
+    box-shadow: 0 8px 20px rgba(145, 129, 244, 0.4); // sombra glow
+  }
+
+  &:active {
+    transform: scale(0.97); // efecto al hacer click
+  }
+}

@@ -1,0 +1,71 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.seccionNavbarhome {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+}
+
+.cointainerLogo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .textLogo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+.NavbarHome {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+
+  @include m.glassWhiteBg;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: v.$text_black;
+  font-weight: 500;
+}
+
+.activeitem {
+    color: v.$text_black;
+    font-weight: 700;
+    border-bottom: 2px solid v.$text_black;
+}
+
+.containerLoginLogUp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navLinkLogin{
+  font-size: 1.8rem;
+  color: v.$text_gray;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+}
+
+.navLinkLogUp {
+  font-size: 1.8rem;
+  color: v.$text_white;
+  background-color: v.$morado2;
+  padding: 1.5rem 2.5rem;
+  border-radius: .6rem;
+  text-decoration: none;
+}
